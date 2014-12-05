@@ -7,7 +7,7 @@ APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')
 
 APP_NAME = APP_ROOT.basename.to_s
 
-DB_PATH  = APP_ROOT.join('db', APP_NAME + ".db").to_s
+# DB_PATH  = APP_ROOT.join('db', "blackjack2.db").to_s
 
 if ENV['DEBUG']
   ActiveRecord::Base.logger = Logger.new(STDOUT)
@@ -20,4 +20,4 @@ require_relative '../app/models/card'
 require_relative '../app/models/player'
 require_relative '../app/models/hand'
 require_relative '../app/views/view'
-ActiveRecord::Base.establish_connection :adapter  => 'sqlite3', :database => DB_PATH
+ActiveRecord::Base.establish_connection :adapter  => 'sqlite3', :database => '../db/blackjack2.db'

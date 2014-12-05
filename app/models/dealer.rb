@@ -48,3 +48,9 @@ class Dealer < ActiveRecord::Base
   end
 
 end
+
+dealer = Dealer.create
+
+dealer.get_hand
+
+p dealer.hand
