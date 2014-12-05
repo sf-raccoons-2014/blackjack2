@@ -1,10 +1,8 @@
 require_relative '../../config/application'
 
-class Deck < ActiveRecord::Base
+# class Deck < ActiveRecord::Base
 
-
-
-end
+# end
 
 
 
