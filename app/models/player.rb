@@ -1,7 +1,8 @@
 require_relative '../../config/application'
 
 class Player < ActiveRecord::Base
-
+  has_many :hands
+  has_many :hands, through: :player_hands
 
 end
 
