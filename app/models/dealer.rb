@@ -48,12 +48,3 @@ class Dealer < ActiveRecord::Base
   end
 
 end
-
-dealer = Dealer.new
-
-card1 = Card.new
-card1.value = 'A'
-card1.played = 'false'
-card2 = Card.new
-card2.value = '9'
-card2.played = 'false'

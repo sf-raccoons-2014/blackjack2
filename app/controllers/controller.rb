@@ -1,6 +1,5 @@
 require_relative '../../config/application'
 
-
 class Controller
 
   def initialize
@@ -43,7 +42,3 @@ class Controller
   end
 
 end
-
-
-
-blackJack = Controller.new

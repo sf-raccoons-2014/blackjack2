@@ -2,9 +2,8 @@ require_relative '../../config/application'
 
 class Player < ActiveRecord::Base
 
-  has_many :cards
-
-  attr_reader :hand
+  has_many :hands
+  has_many :hands, through: :player_hands
 
     def change_ace!
     hand = total
